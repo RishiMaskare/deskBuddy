@@ -80,4 +80,5 @@ npm start
 Your app will run at: http://localhost:3000
 
 ## 👩‍🎓 Authors
-Created with ❤️ by Kirti and Sabeena as a project to bridge the gap between UI design and frontend logic.
+Created with ❤️ by Sabeena 
+a project built to bridge the gap between UI design and frontend logic, especially for engineering students.
