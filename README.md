@@ -1,181 +1,83 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-
-📚 Desk Buddy – Student Productivity Dashboard
-📝 Project Overview
-
-Desk Buddy is a student productivity web application designed to help college students manage their academic life in one place.
-The idea behind this project is to make daily student tasks like tracking study time, managing courses, planning tasks, and monitoring leaves simple and visually engaging.
-
-This project was built as a frontend-focused React application, to keep things simple and easy to understand.
-
-✨ Features
-🔐 Authentication
-
-Sign Up and Login functionality
-
-User data stored securely using localStorage
-
-
-📊 Dashboard
-
-Welcome card with student name
-Clean and minimal UI for easy navigation
-
-📘 Courses Section
-
-Courses displayed as modern cards
-
-Each card shows:
-
-Course image
-
-Lessons completed vs total lessons
-
-Progress bar
-
-Continue button to track course progress
-
-⏱ Time Tracker
-
-Start, Stop, and Reset functionality
-
-Time displayed in hours : minutes : seconds
-
-Designed to help students track focused study sessions
-
-🧙‍♂️ Harry Potter Themed To-Do Board
-
-Task board inspired by a magical (Harry Potter–style) theme
-
-Tasks are grouped into:
-
-To Do
-
-In Progress
-
-Done
-
-Features:
-
-Add tasks
-
-Move tasks between columns
-
-Delete tasks
-
-Tasks persist using localStorage
-
-📅 Leave Tracker
-
-Monthly calendar with selectable year and month
-
-Click on any date to mark leave with a reason
-
-Tracks:
-
-Total working days (user input)
-
-Leaves taken
-
-Leave percentage (visual donut chart)
-
-Calendar highlights leave days clearly
-
-🎨 UI & Theme
-
-Sidebar color: #0C2C55
-
-Dashboard accent colors: #296374, #629FAD
-
-Background color: #EBD5AB
-
-Responsive and clean design suitable for student use
-
-🛠 Tech Stack
-
-React.js
-
-JavaScript 
-
-CSS
-
-LocalStorage for data persistence
-
-▶️ How to Run the Project
-
-Clone the repository
-
-git clone <repository-link>
-
-
-Install dependencies
-
+# 📚 Desk Buddy – Student Productivity Dashboard
+
+**Desk Buddy** is a comprehensive productivity hub built with **React.js**, designed to help students streamline their academic life. From tracking course progress to managing study sessions with a themed To-Do board, this dashboard brings everything into one cohesive interface.
+
+This project showcases component-based architecture, efficient state management, and data persistence using frontend best practices.
+
+---
+
+## 🚀 Preview
+![Dashboard Screenshot](./src/assets/homepage.png)
+![Time Tracker](./src/assets/timetracker.png)
+![To Do Section](./src/assets/todo.png)
+![Leave Tracker](./src/assets/leavetracker.png)
+
+---
+
+## ✨ Features
+
+* 🔐 **Authentication**: Functional Sign Up & Login system.
+* 📊 **Course Tracking**: Visualize academic progress with dynamic progress bars.
+* ⏱️ **Study Time Tracker**: Integrated Start/Stop/Reset timer for deep work sessions.
+* ⚡ **Harry Potter–Themed To-Do Board**: Manage tasks with a touch of magic.
+* 📅 **Leave Tracker**: Log absences with a calendar view and visual donut charts.
+* 💾 **Persistent Storage**: All data is saved to `localStorage`, so your progress stays even after a refresh.
+* 📱 **Responsive Design**: Clean UI optimized for various screen sizes.
+
+---
+
+## 🧠 Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React.js |
+| **Styling** | CSS3 (Custom Properties) |
+| **Storage** | LocalStorage API |
+| **Icons** | FontAwesome / Lucide React (optional) |
+
+---
+
+## 📂 Folder Structure
+```text
+desk-buddy/
+├── public/              # Static assets (favicon, index.html)
+├── src/
+│   ├── assets/          # Project screenshots & illustrations
+│   │   ├── homepage.png
+│   │   ├── leavetracker.png
+│   │   ├── timetracker.png
+│   │   └── todo.png
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Main page views/layouts
+│   ├── App.js           # Main component logic
+│   ├── App.css          # App-wide styles
+│   ├── App.test.js      # Testing file
+│   ├── index.js         # Entry point
+│   └── index.css        # Global styles
+├── .gitignore           # Files to ignore in Git
+├── package.json         # Project dependencies & scripts
+└── README.md            # Project documentation
+```
+
+## 🛠️ Getting Started (Local Setup)
+Follow these steps to get a local copy up and running:
+
+## 1️⃣ Clone the repository
+```bash
+git clone [https://github.com/your-username/desk-buddy.git](https://github.com/your-username/desk-buddy.git)
+cd desk-buddy
+```
+## 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
-
-Start the development server
-
+## 3️⃣ Start the Development Server
+```bash
 npm start
+```
 
+Your app will run at: http://localhost:3000
 
-Open your browser and go to
-
-http://localhost:3000
-
-🎯 Learning Outcomes
-
-Through this project, I learned:
-
-React component structure and state management
-
-Conditional rendering and navigation without routing
-
-Using localStorage for persistent data
-
-Building reusable UI components
-
-Designing user-friendly dashboards
-
-Improving UI/UX through consistent theming
-
-🚀 Future Improvements
-
-Backend integration (authentication & database)
-
-User-specific data storage
-
-Notifications and reminders
-
-Course-wise analytics
-
-
-👩‍🎓 Author:
-Desk Buddy was created by kirti and Sabeena as a student project to practice React, UI design, and frontend logic while solving a real-world student productivity problem.
+## 👩‍🎓 Authors
+Created with ❤️ by Kirti and Sabeena as a project to bridge the gap between UI design and frontend logic.
