@@ -521,12 +521,6 @@ body {
   background: #296374;
 }
 
-/* GRID */
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
 
 /* DAY LABELS */
 .day-label {
@@ -553,11 +547,6 @@ body {
   transform: scale(1.05);
 }
 
-/* LEAVE DAY */
-.day.leave {
-  background: #ef4444;
-  color: white;
-}
 
 /* ======================
    LEAVE COUNT
@@ -579,13 +568,7 @@ body {
   z-index: 50;
 }
 
-.leave-modal > div {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  width: 320px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
-}
+
 
 .leave-modal h4 {
   margin-bottom: 8px;
@@ -629,9 +612,6 @@ body {
   background: #296374;
 }
 
-.modal-actions button:last-child {
-  background: #e5e7eb;
-}
 
 
 /* //old  */
@@ -765,7 +745,6 @@ body {
 }
 
 .hp-card {
-  background: #f8fafc;
   padding: 14px;
   border-radius: 12px;
   margin-bottom: 12px;
@@ -956,7 +935,6 @@ body {
 
 .danger {
   background: #ef4444;
-  color: white;
   border: none;
   padding: 6px 12px;
   border-radius: 6px;
@@ -969,3 +947,49 @@ body {
 }
 
 
+/* =====================================================
+   DARK MODE SAFE OVERRIDES (DO NOT DELETE ANYTHING ABOVE)
+===================================================== */
+
+body.dark .card,
+body.dark .panel,
+body.dark .course-card,
+body.dark .hp-column,
+body.dark .calendar-wrapper,
+body.dark .progress-table {
+  background: var(--bg-card) !important;
+  color: var(--text-main) !important;
+}
+
+body.dark .main {
+  background: var(--bg-content) !important;
+}
+
+body.dark .topbar input {
+  background: var(--bg-card) !important;
+  color: var(--text-main) !important;
+}
+
+body.dark .course-lessons,
+body.dark .day-label,
+body.dark .card span,
+body.dark .donut p {
+  color: var(--text-muted) !important;
+}
+
+body.dark .progress-table th {
+  background: var(--bg-content) !important;
+}
+
+body.dark .progress-table tr:hover {
+  background: rgba(255,255,255,0.05) !important;
+}
+
+body.dark .day {
+  background: #1f2937 !important;
+  color: var(--text-main) !important;
+}
+
+body.dark .day:hover {
+  background: #374151 !important;
+}
